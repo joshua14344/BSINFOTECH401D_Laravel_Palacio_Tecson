@@ -8,7 +8,7 @@
     <div class="row justify-content-center ">
         <div class="col-sm-8">
             <div class="card my-5 p-3">
-                <h2 class="text-muted">Product Update #{{ $product->name }}</h2>
+                <h2 class="text-muted">Product Update: {{ $product->name }}</h2>
                 <form action="/products/{{ $product->id }}/update" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
@@ -34,8 +34,8 @@
                             <span class="text-danger">{{ $errors->first('image') }}</span>
                         @endif
                     </div>
-                    <button type="submit" name="submit" class="btn btn-dark">Submit</button>
-                    <a href="{{ route('products.index') }}" class="btn btn-success">Back</a>
+                    <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                    <a href="{{ route('products.index') }}" class="btn btn-danger">Back</a>
                 </form>
             </div>
         </div>

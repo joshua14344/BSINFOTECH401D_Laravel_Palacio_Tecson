@@ -11,7 +11,7 @@
                 <p><b>Name : </b>{{ $product->name }}</p>
                 <p><b>Description : </b>{{ $product->description }}</p>
                 <img src="/products/{{ $product->image }}" class="rounded img-fluid ">
-                <a href="{{ route('products.index') }}" class="btn btn-dark">Back</a>
+                <a href="{{ route('products.index') }}" class="btn btn-success">Back</a>
             </div>
         </div>
     </div>

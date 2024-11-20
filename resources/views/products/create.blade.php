@@ -33,8 +33,8 @@
                             <span class="text-danger">{{ $errors->first('image') }}</span>
                         @endif
                     </div>
-                    <button type="submit" name="submit" class="btn btn-dark">Submit</button>
-                    <a href="{{ route('products.index') }}" class="btn btn-success">Back</a>
+                    <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                    <a href="{{ route('products.index') }}" class="btn btn-danger">Back</a>
                 </form>
             </div>
         </div>

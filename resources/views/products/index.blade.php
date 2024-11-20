@@ -6,13 +6,13 @@
 @include('products.navbar')
 <div class="container">
     <div class="mt-4 text-right">
-        <a href="{{ route('products.create') }}" class="btn btn-dark">Add Product</a>
+        <a href="{{ route('products.create') }}" class="btn btn-success">Add Product</a>
     </div>
     <div class="table-responsive table-bordered my-3 p-3">
         <table class="table table-hover text-center ">
             <thead>
               <tr>
-                <th>no</th>
+                <th>P.no</th>
                 <th>Name</th>
                 <th>Image</th>
                 <th>Action</th>
